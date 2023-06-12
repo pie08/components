@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.2;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+.blob {
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to right, aquamarine, mediumpurple);
+  position: absolute;
+  translate: -50% -50%;
+  border-radius: 50%;
+  animation: rotate 20s infinite;
+  z-index: -999;
+}
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(200px);
+  position: absolute;
+  z-index: -998;
+}

@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #111;
+  font-family: "Space Mono", sans-serif;
+
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  color: #eee;
+  font-size: 68px;
+}
